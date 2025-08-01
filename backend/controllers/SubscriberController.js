@@ -1,15 +1,17 @@
 const Subscriber = require("../models/Subscriber");
 const nodemailer = require("nodemailer");
 const domain = process.env.DOMAIN_URL;
+
 const sendWelcomeEmail = async (email) => {
     const transporter = nodemailer.createTransport({
-        service: "gmail",
-        auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASS,
-        },
-    });
-
+    host: process.env.EMAIL_HOST,
+    port: Number(process.env.EMAIL_PORT),
+    secure: process.env.EMAIL_SECURE === "true",
+    auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+    },
+});
 
     const htmlContent = `
   <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; background: #ffffff; padding: 24px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
