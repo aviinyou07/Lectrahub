@@ -1,4 +1,7 @@
-const BASE_URL = "http://localhost:5000/api"; // or your deployed backend URL
+// const BASE_URL = "http://localhost:5000/api"; 
+
+const BASE_URL = import.meta.env.VITE_API_URL;
+
 
 // University APIs
 export const UNIVERSITY_API = {
