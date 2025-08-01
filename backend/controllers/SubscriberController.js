@@ -39,13 +39,21 @@ const sendWelcomeEmail = async (email) => {
   </div>
 `;
 
-    await transporter.sendMail({
-        from: `"LectraHub" <${process.env.EMAIL_USER}>`,
-        to: email,
-        subject: "Welcome to LectraHub!",
-        text: "Thanks for subscribing to LectraHub! You'll now receive updates, expert tips, and more.",
-        html: htmlContent,
-    });
+    try {
+  await transporter.verify();
+  console.log("✅ SMTP connection successful");
+
+  await transporter.sendMail({
+    from: `"LectraHub" <${process.env.EMAIL_USER}>`,
+    to: email,
+    subject: "Welcome to LectraHub!",
+    text: "Thanks for subscribing to LectraHub! You'll now receive updates, expert tips, and more.",
+    html: htmlContent,
+  });
+} catch (err) {
+  console.error("❌ Email sending failed:", err);
+}
+
 };
 
 
