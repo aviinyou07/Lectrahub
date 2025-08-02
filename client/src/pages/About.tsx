@@ -37,7 +37,7 @@ const About = () => {
 
   return (
     <PageLayout
-      title="About StudyHub"
+      title="About LectraHub"
       description="Empowering students with comprehensive study resources and academic support."
       backgroundImage="/public/close-up-hand-taking-notes.jpg"
     >

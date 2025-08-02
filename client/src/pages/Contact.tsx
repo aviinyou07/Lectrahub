@@ -267,9 +267,9 @@ const handleSubmit = async (e: FormEvent) => {
                   "Navigate through University → Course → Branch → Semester → Subject to find all study materials including notes, videos, and syllabus content."
               },
               {
-                question: "Is StudyHub free to use?",
+                question: "Is LectraHub free to use?",
                 answer:
-                  "Yes! StudyHub is completely free for all students. Our mission is to make quality education accessible to everyone."
+                  "Yes! LectraHub is completely free for all students. Our mission is to make quality education accessible to everyone."
               },
               {
                 question: "Can I contribute content?",

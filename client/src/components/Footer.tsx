@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <img
                 src="/Logo.png"
-                alt="StudyHub Logo"
+                alt="LectraHub Logo"
                 className="w-100 h-10 object-contain"
               />
             </div>
@@ -82,7 +82,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2 text-sm">
                 <Mail className="w-4 h-4 text-blue-400" />
-                <span className="text-gray-300">info@studyhub.com</span>
+                <span className="text-gray-300">info@LectraHub.com</span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
                 <Phone className="w-4 h-4 text-blue-400" />

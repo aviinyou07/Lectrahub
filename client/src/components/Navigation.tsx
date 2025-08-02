@@ -28,7 +28,7 @@ const Navigation = () => {
 >
   <img
     src="/Logo.png"
-    alt="StudyHub Logo"
+    alt="LectraHub Logo"
     className="h-10 object-contain ml-5 "
   />
 </Link>
